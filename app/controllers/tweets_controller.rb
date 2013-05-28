@@ -5,6 +5,17 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(params[:tweets])
 
     respond_to do |format|
+<<<<<<< HEAD
+=======
+    format.html # index.html.erb
+    format.json { render json: @tweets }
+   end
+  end
+  
+  def update_status
+     @tweet = Tweet.new(params[:tweet])
+     respond_to do |format|
+>>>>>>> 1aab3d3ee540084d763906ca06ae852b2c85ae29
       format.html # index.html.erb
       format.json { render json: @tweets }
     end

@@ -1,7 +1,11 @@
 TweeterApp::Application.routes.draw do
   resources :tweets
   match "read_message" => "tweets#read_message"
+<<<<<<< HEAD
   match "update" => "tweet#update_status"
+=======
+  match "update" => "tweets#update_status"
+>>>>>>> 1aab3d3ee540084d763906ca06ae852b2c85ae29
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
